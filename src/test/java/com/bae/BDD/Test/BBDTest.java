@@ -44,6 +44,7 @@ public class BBDTest {
 	public void i_search_for(String arg1) {
 	    // Write code here that turns the phrase above into concrete actions
 		WebDriverWait waitWeb = (new WebDriverWait(driver, 10));
+		
 		WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"sb_form_q\"]"));
 		searchBox.sendKeys(arg1);
 		searchBox.submit();
